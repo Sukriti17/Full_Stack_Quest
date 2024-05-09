@@ -1,0 +1,49 @@
+body {
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-right: 250px;
+    background-image: url("prj2.jpg");
+}
+
+form {
+    border-style: solid;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00134d;
+    color: #ccffff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+#title, #description {
+    justify-content: center;
+    text-align: center;
+}
+
+#name, #email, #number, #dropdown, #number {
+    margin-top: 3px;
+    width: 100%;
+}
+
+#textarea {
+    width : 100%;
+    resize: none;
+}
+
+#description {
+    font-size: 20px;
+}
+
+#submit {
+    width: 100%;
+    font-size: 15px;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for filling out this survey form.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" min="16" max="100" placeholder="Enter your age" required>
+        <br>
+        
+        <label for="dropdown">Favorite subjects you love:</label>
+        <select id="dropdown" name="subjects">
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Computer Networks">Computer Networks</option>
+            <option value="Data Science">Data Science</option>
+            <option value="DSA">DSA</option>
+        </select>
+        <br>
+        
+        <fieldset>
+            <legend>Was this form helpful?</legend>
+            <input type="radio" id="yes" name="helpful" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="helpful" value="No">
+            <label for="no">No</label>
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend>Favorite Domains:</legend>
+            <input type="checkbox" id="python" name="domain" value="Python Developer">
+            <label for="python">Python Developer</label><br>
+            <input type="checkbox" id="java" name="domain" value="Java Developer">
+            <label for="java">Java Developer</label><br>
+            <input type="checkbox" id="software" name="domain" value="Software Developer">
+            <label for="software">Software Developer</label><br>
+            <input type="checkbox" id="full-stack" name="domain" value="Full Stack Developer">
+            <label for="full-stack">Full Stack Developer</label><br>
+            <input type="checkbox" id="ml-engineer" name="domain" value="Machine Learning Engineer">
+            <label for="ml-engineer">Machine Learning Engineer</label><br>
+            <input type="checkbox" id="data-scientist" name="domain" value="Data Scientist">
+            <label for="data-scientist">Data Scientist</label><br>
+        </fieldset>
+        <br>
+        
+        
+        <label for="comments">Would you like to give us any suggestions? :</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="I would like you to improve on..."></textarea>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
